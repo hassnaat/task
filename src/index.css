@@ -1,0 +1,62 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f8;
+}
+
+/* Button Styles */
+button {
+  border: none;
+  background-color: #1976d2;
+  color: white;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #1565c0;
+  transform: scale(1.05);
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Card Styles */
+.MuiCard-root {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.MuiCard-root:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Container and Typography Styles */
+.MuiContainer-root {
+  padding: 16px;
+}
+
+.MuiTypography-h4 {
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.MuiTypography-h5 {
+  color: #555;
+}
+
+.MuiTypography-body1 {
+  color: #666;
+}
+
+.MuiPaper-root {
+  padding: 16px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

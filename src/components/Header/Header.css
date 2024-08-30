@@ -1,0 +1,129 @@
+.header {
+    background-color: #fff;
+}
+
+.topbar-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px 4%;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.hamburger-button {
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 24px;
+    transition: background-color 0.3s ease;
+}
+
+.hamburger-button:hover {
+    background-color: #555;
+}
+
+.menu-box {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    z-index: 1000;
+    border-radius: 4px;
+}
+
+.menu-box.open {
+    max-height: 300px;
+    opacity: 1;
+}
+
+.menu-item {
+    padding: 10px;
+    color: #333;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu-item:hover {
+    background-color: #f5f5f5;
+}
+
+.sub-menu {
+    top: 0;
+    left: 100%;
+    width: 150px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    z-index: 1000;
+    border-radius: 4px;
+    width: 100%;
+    padding-top: 5px;
+}
+
+.sub-menu.open {
+    max-height: 200px;
+    opacity: 1;
+}
+
+.sub-menu-item {
+    width: 100%;
+    padding: 10px;
+    color: #333;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.sub-menu-item:hover {
+    background-color: white;
+}
+
+.horizontal-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    padding: 0px 4%;
+    height: 50px;
+}
+
+.menu-link {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    width: 130px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-link:hover {
+    background-color: rgba(255, 255, 255, 0.291);
+}
+
+.active-item {
+    background-color: rgba(255, 255, 255, 0.291);
+}
+
+.menu-link:active {
+    transform: scale(0.95);
+}
